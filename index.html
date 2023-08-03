@@ -9,7 +9,35 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
+<style>
+/* Added CSS */
 
+#hamburger {
+  font-size: 24px;
+  cursor: pointer; 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+
+#menuOverlay nav {
+  background: #fff;
+  padding: 16px;
+  position: relative; 
+}
+
+</style>
+
+</head>
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -166,6 +194,29 @@
       </td>
     </tr>
   </table>
+<button id="hamburger">☰</button>
+
+<div id="menuOverlay">
+
+  <nav>
+  
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+    
+  </nav>
+  
+</div>
+
+<script>
+// Added JS  
+const hamburger = document.getElementById('hamburger');
+const menuOverlay = document.getElementById('menuOverlay');
+
+hamburger.addEventListener('click', () => {
+  menuOverlay.style.display = 'block'; 
+});
 </body>
 
 </html>
