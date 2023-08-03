@@ -34,7 +34,29 @@
   padding: 16px;
   position: relative; 
 }
+<button id="hamburger">☰</button>
 
+<div id="menuOverlay">
+
+  <nav>
+  
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+    
+  </nav>
+  
+</div>
+
+<script>
+// Added JS  
+const hamburger = document.getElementById('hamburger');
+const menuOverlay = document.getElementById('menuOverlay');
+
+hamburger.addEventListener('click', () => {
+  menuOverlay.style.display = 'block'; 
+});
 </style>
 
 </head>
@@ -194,29 +216,6 @@
       </td>
     </tr>
   </table>
-<button id="hamburger">☰</button>
-
-<div id="menuOverlay">
-
-  <nav>
-  
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-    
-  </nav>
-  
-</div>
-
-<script>
-// Added JS  
-const hamburger = document.getElementById('hamburger');
-const menuOverlay = document.getElementById('menuOverlay');
-
-hamburger.addEventListener('click', () => {
-  menuOverlay.style.display = 'block'; 
-});
 </body>
 
 </html>
