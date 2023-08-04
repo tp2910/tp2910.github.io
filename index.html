@@ -1,203 +1,111 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tavish Pattanayak</title>
+<meta name="author" content="Tavish Pattanayak">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 <style>
-		.container {
-			display: flex;
-			align-items: center;
-			justify_content: space-between;
-			padding: 20px;
-		}
-
-		.text {
-			width: 70%;
-			padding-right: 20px;
-		}
-
-		.image {
-			width: 30%;
-			position: relative;
-		}
-
-		.image img {
-			width: 100%;
-			height: auto;
-		}
-  <title>Tavish Pattanayak</title>
-  
-  <meta name="author" content="Tavish Pattanayak">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-	  body {
+  /* Reset default margin and padding */
+  body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+  }
+
+  /* Define a general font and background color */
+  body {
     font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
   }
 
-  .header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 20px;
+  /* Center the content */
+  .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  .logo {
+  /* Add spacing between sections */
+  .section {
+    margin-bottom: 20px;
+  }
+
+  /* Style the name */
+  .name {
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
   }
 
-  .menu-toggle {
-    display: none;
-    cursor: pointer;
+  /* Style the main content text */
+  .content {
+    text-align: justify;
+    line-height: 1.5;
+    color: #666;
   }
 
-  .menu {
-    display: flex;
-    gap: 20px;
+  /* Style headings */
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 
-  .menu-item {
-    font-size: 18px;
-    cursor: pointer;
-    color: #fff;
+  /* Style the image */
+  .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
   }
 
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #333;
-      width: 150px;
-      padding: 10px;
-    }
-
-    .menu-item {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .menu-toggle {
-      display: block;
-    }
+  /* Style the footer */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
   }
 </style>
 </head>
 <body>
-<!-- <button id="hamburger">☰</button>
-
-<div id="menu">
-
-  <nav>
-  
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="Papers.html">Papers</a>
-    <a href="Courses.html">Courses</a>
-    <a href="Experience.html">Experience</a>
-    <a href="Contact.html">Contact</a>
-    
-  </nav>
-  
-</div> -->
-<div class="header">
-  <div class="logo">Tavish Pattanayak</div>
-  <div class="menu-toggle">&#9776;</div>
-  <div class="menu">
-    <div class="menu-item"><a href="index.html">Home</a></div>
-    <div class="menu-item"><a href="About Me.html">About Me</a></div>
-    <div class="menu-item"><a href="Papers.html">Papers</a></div>
-    <div class="menu-item"><a href="Courses.html">Courses</a></div>
-    <div class="menu-item"><a href="Experience.html">Experience</a></div>
-    <div class="menu-item"><a href="Contact.html">Contact Me</a></div>
-  </div>
-</div>
-
 <div class="container">
-	<div class="text">
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Tavish Pattanayak</name>
+  <div class="section">
+    <h1 class="name">Tavish Pattanayak</h1>
+    <div class="content">
+      <p>I am a 3rd year PhD in <a href="https://ae.gatech.edu/">Aerospace Engineering</a> at <a href="https://www.gatech.edu/">Georgia Tech</a> , working as a graduate researcher in the <a href="https://www.asdl.gatech.edu/">ASDL (Aerospace System Design Lab)</a> under Prof. Dimitri Mavris. My research interests include design optimization, aerodynamics, human factors, and uncertainty quantification. 
               </p>
-              <p>I am a 3rd year PhD in <a href="https://ae.gatech.edu/">Aerospace Engineering</a> at <a href="https://www.gatech.edu/">Georgia Tech</a> , working as a graduate researcher in the <a href="https://www.asdl.gatech.edu/">ASDL (Aerospace System Design Lab)</a> under Prof. Dimitri Mavris. My research interests include design optimization, aerodynamics, human factors, and uncertainty quantification. 
-              </p>
-              <p>
+      <p>
 		Currently, my research is on Uncertainty Quantification for the <a href="https://www.nasa.gov/aeroresearch/programs/iasp/epfd/">Electrified Propulsor Flight Demonstrator Program</a> sponsored by <a href="https://www.nasa.gov/">NASA</a>. Concurrently I am also exploring issues relating to human factors in aerospace.  
                Previously, I graduated with a Masters in Aerospace Engineering degree from Georgia Tech, wherein I worked as a Graduate Research Assistant on Real-time Visualization of Simulation Results using Animation Tools for racecars sponsored by an automotive OEM. 
 		If you have any questions on my work, or if you think we can collaborate or just for general discussions, please do not hesitate to contact me!   <br>
-              </p>																																		
-              <p style="text-align:center">
-                <a href="mailto:tavish.pattanayak@gatech.edu">Email</a> &nbsp/&nbsp
-                <a href="data/RakshitNaidu_CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en</a> &nbsp/&nbsp
               </p>
-            </td>
-	</div>
-	<div class="image">
-            <img src="images/profile.jpg"> alt="Profile Image">
-	</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="image">
+      <img src="images/profile.jpg" alt="Profile Image">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>News</h2>
+    <ul>
+      <li>[May, 2023] Serving as a Reviewer for NeurIPS 2023 and GenLaw-ICML'23.</li>
+      <li>[April, 2023] Starting PhD in Computer Science and Engineering at ISyE, Georgia Tech this Fall!</li>
+      <li>[Oct, 2022] Our paper Pruning has a disparate impact on model accuracy accepted at NeurIPS 2022 as a Spotlight Lightning talk!</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>©2023 <a href="https://tp2910.github.io">Tavish Pattanayak</a></p>
+    <p>Email: tavish[dot]pattanayak@gatech[dot]edu</p>
+  </div>
 </div>
-          </tr>
-		
-		
-        </tbody></table>
-	      
-	
-	 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-		    
-		 I'm extremely 
-		<br><br>
-		Additionally, 
-	    	</td> 
-              <heading>News</heading>
-              <ul>
-		  <li>[May, 2023] I will serve as a Reviewer for <a href="https://nips.cc/">NeurIPS 2023</a> and <a href="https://genlaw.github.io/">GenLaw-ICML'23</a>.</li>
-		  <li>[April, 2023] I will start my PhD in Computer Science and Engineering at <a href="https://www.isye.gatech.edu/">ISyE, Georgia Tech</a> this Fall!</li> I am also a recipient of the Stewart Topper Fellowship for the academic year of 2023-24 :)
-		      <li>[Oct, 2022] Our paper <a href="https://arxiv.org/abs/2205.13574">Pruning has a disparate impact on model accuracy</a> has been accepted at NeurIPS 2022 as a Spotlight Lightning talk! It was also nominated for a best paper award, kudos to Cuong! =)</li>
-	      </ul>
-            </td>
-          </tr>
-        </tbody></table>
-	
-    
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Thanks to Jon Barron for sharing the template/<a href="https://github.com/jonbarron/jonbarron_website">source code</a> of this website!
-              </p>
-	 <div class="footer_layout">
-	 <div class = "footer">
-		 <p>
-			 "©2023 "
-			 <a href="https://tp2910.github.io">Tavish Pattanayak</a>
-		 </p>
-		 <p> Email: tavish[dot]pattanayak@gatech[dot]edu</p>
-	 </div>
-	 </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
- <script src="script.js"></script>
-
 </body>
-
 </html>
