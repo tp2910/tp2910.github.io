@@ -1,47 +1,136 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tavish Pattanayak - Courses</title>
+<meta name="author" content="Tavish Pattanayak">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 <style>
-  .semester {
+  /* Reset default margin and padding */
+  body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Define a general font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+  /* Center the content */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Add spacing between sections */
+  .section {
     margin-bottom: 20px;
   }
 
-  .semester h3 {
+  /* Style the name */
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Style the main content text */
+  .content {
+    text-align: justify;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  /* Style headings */
+  h2 {
+    font-size: 22px;
     margin-bottom: 10px;
   }
 
-  .course {
-    margin-left: 20px;
-    list-style: none; /* Remove default bullet points */
+  /* Style the image */
+  .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
   }
 
-  .course li {
-    margin-bottom: 5px;
+  /* Style the footer */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
   }
 
-  .course-name {
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
     font-weight: bold;
   }
 
-  .course-description {
-    color: #666;
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-item {
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .current {
+    font-weight: bold;
+    color: #77aaff; /* Highlight color */
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      width: 150px;
+      padding: 10px;
+    }
+
+    .menu-item {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
   }
 </style>
-<!--button id="hamburger">☰</button>
-
-<div id="menu">
-
-  <nav>
-  
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="Papers.html">Papers</a>
-    <a class="current" href="Courses.html">Courses</a>
-    <a href="Experience.html">Experience</a>
-    <a href="Contact.html">Contact</a>
-    
-  </nav>
-  
-</div> -->
+</head>
+<body>
 <div class="header">
   <div class="logo">Tavish Pattanayak</div>
   <div class="menu-toggle">&#9776;</div>
@@ -49,16 +138,13 @@
     <div class="menu-item"><a href="index.html">Home</a></div>
     <div class="menu-item"><a href="About Me.html">About Me</a></div>
     <div class="menu-item"><a href="Papers.html">Papers</a></div>
-    <div class="menu-item"><a href="Courses.html">Courses</a></div>
+    <div class="menu-item current"><a href="Courses.html">Courses</a></div>
     <div class="menu-item"><a href="Experience.html">Experience</a></div>
     <div class="menu-item"><a href="Contact.html">Contact Me</a></div>
   </div>
 </div>
-</head>
 
-<body>
-
-<div class="semester">
+<div class="container">
   <h2>Courses<h2>
   <h3>Fall 2021</h3>
   <ul class="course">
@@ -75,7 +161,7 @@
   </ul>
 </div>
 
-<div class="semester">
+<div class="container">
   <h3>Spring 2022</h3>
   <ul class="course">
     <li>
@@ -97,7 +183,7 @@
   </ul>
 </div>
 
-<div class="semester">
+<div class="container">
   <h3>Summer 2022</h3>
   <ul class="course">
     <li>
@@ -107,7 +193,7 @@
   </ul>
 </div>
 
-<div class="semester">
+<div class="container">
   <h3>Fall 2022</h3>
   <ul class="course">
     <li>
@@ -121,7 +207,7 @@
   </ul>
 </div>
 
-<div class="semester">
+<div class="container">
   <h3>Spring 2023</h3>
   <ul class="course">
     <li>
@@ -131,7 +217,7 @@
   </ul>
 </div>
 
-<div class="semester">
+<div class="container">
   <h3>Summer 2023</h3>
   <ul class="course">
     <li>
@@ -148,8 +234,5 @@
     </li>
   </ul>
 </div>
-
 </body>
 </html>
-
-
