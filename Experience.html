@@ -69,11 +69,16 @@
   color: #888;
 }
 
-/* Padding and margins */
-.container {
-  padding: 60px 20px; 
-}
-
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+    
 .experience {
   padding: 20px;
   margin-bottom: 40px;
@@ -140,10 +145,12 @@
     <div class="menu-item"><a href="Extrac.html">Extra Curriculars</a></div>
   </div>
 </div>
+  
   <div class="container">
 
     <h1>Experience</h1>
-
+      <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+        
         <div class="experience">
 
       <h2 class="role">Department Manager</h2>
