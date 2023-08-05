@@ -7,13 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <style>
-    /* Reset margins */
-    body, h1, h2, h3, p, ul {
-      margin: 0;
-      padding: 0;
-    }
-    
+<style>
+  /* Reset margins */
+  body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Define a general font and background color */
   body {
     font-size: 20px;
@@ -32,59 +32,57 @@
     margin: 0 auto;
     text-align: center;
   }
-   
-    /* Sections */
-    .section {
-      margin-bottom: 40px;
-      padding: 20px;
-    }
-    
-    /* School name */
-    .school h3 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
 
-    .education-item {
-      margin-bottom: 30px;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-    
-    a:hover{
-      text-decoration: underline;
-    }
-    
-    .school div {
-      color: #777;
-      font-size: 18px;
-    }
-   
-    /* Content text */
-    .content {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #555;
-      margin-top: 15px;
-      max-width: 600px;
-    }
+  /* Sections */
+  .section {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
 
-    .content p:nth-child(1) {
-  font-size: 24px; 
-}
+  /* School name */
+  .school h3 {
+    font-size: 28px; /* Decreased font size */
+    font-weight: bold;
+    margin-bottom: 15px; /* Reduced margin */
+  }
 
-.content p:nth-child(2) {
-  font-size: 24px;
-}
+  .education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 
-.content p:nth-child(4) {
-  font-size: 18px;
-}
-    
-    /* Header */
+  .education-item p {
+    font-size: 18px; /* Decreased font size for other details */
+    margin-bottom: 5px; /* Reduced margin */
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Content text */
+  .content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 15px;
+    max-width: 600px;
+  }
+
+  .content p:nth-child(1),
+  .content p:nth-child(2) {
+    font-size: 20px; /* Slightly increased font size */
+  }
+
+  .content p:nth-child(4) {
+    font-size: 16px; /* Decreased font size */
+  }
+
+  /* Header */
   .header {
     background-color: #333;
     color: #fff;
@@ -94,24 +92,23 @@
     align-items: center;
   }
 
-    h1 {
-      font-size: 36px;
-    }
+  h1 {
+    font-size: 36px;
+  }
 
-    h2 {
-      font-size: 32px;
-    }
+  h2 {
+    font-size: 32px;
+  }
 
-    h3 {
-      font-size: 28px;
-    }
-    
-    .header .logo {
-      font-weight: bold;
-      font-size: 24px;
-    }
+  h3 {
+    font-size: 28px;
+  }
 
-    
+  .header .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
   .menu-toggle {
     display: none;
     cursor: pointer;
@@ -133,35 +130,13 @@
     color: #77aaff; /* Highlight color */
   }
 
-    
   @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #333;
-      width: 150px;
-      padding: 10px;
-    }
-
-    .menu-item {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .menu-toggle {
-      display: block;
-    }
+    /* ... (your existing media query styles) ... */
   }
-    
-  </style>
-  
+</style>
 </head>
 
 <body>
-  
 <div class="header">
   <div class="logo">Tavish Pattanayak</div>
   <div class="menu-toggle">&#9776;</div>
@@ -176,28 +151,29 @@
 </div>
 
 <div class="container">
-    <div style="text-align: left; max-width: 800px; margin: 0 auto;">
-      
-<div class="section">
-  <h2>Education</h2>
-  
-  <div class="education-item">
-    <h3><a href=https://www.gatech.edu/>Georgia Institute of Technology</a> - Atlanta, GA</h3>
-    <p>Doctor of Philosophy in <a href=https://www.ae.gatech.edu/>Aerospace Engineering</a></p>
-    <p>Expected Graduation: 2025</p>
-      
-  <div class="education-item">
-    <h3><a href=https://www.gatech.edu/>Georgia Institute of Technology</a> - Atlanta, GA</h3>
-    <p>Master of Science in <a href=https://www.ae.gatech.edu/>Aerospace Engineering</a></p>
-    <p>Graduation: July 2023</p>
-    <p>CGPA: 3.9/4</p>
-  
-  <div class="education-item">
-    <h3><a href=https://manipal.edu/mit.html/>Manipal Institute of Technology</a> - Manipal, India</h3>
-    <p><a href=https://manipal.edu/mit/program-list/btech/btech-mechanical-engineering.html/>Bachelor of Technology in Mechanical Engineering</a></p>
-    <p>Minor in Thermal Engineering</p>
-    <p>Graduation: May 2021</p>
-    <p>CGPA: 8.7/10</p>
-
+  <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+    <div class="section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3><a href="https://www.gatech.edu/">Georgia Institute of Technology</a> - Atlanta, GA</h3>
+        <p>Doctor of Philosophy in <a href="https://www.ae.gatech.edu/">Aerospace Engineering</a></p>
+        <p>Expected Graduation: 2025</p>
+      </div>
+      <div class="education-item">
+        <h3><a href="https://www.gatech.edu/">Georgia Institute of Technology</a> - Atlanta, GA</h3>
+        <p>Master of Science in <a href="https://www.ae.gatech.edu/">Aerospace Engineering</a></p>
+        <p>Graduation: July 2023</p>
+        <p>CGPA: 3.9/4</p>
+      </div>
+      <div class="education-item">
+        <h3><a href="https://manipal.edu/mit.html/">Manipal Institute of Technology</a> - Manipal, India</h3>
+        <p><a href="https://manipal.edu/mit/program-list/btech/btech-mechanical-engineering.html/">Bachelor of Technology in Mechanical Engineering</a></p>
+        <p>Minor in Thermal Engineering</p>
+        <p>Graduation: May 2021</p>
+        <p>CGPA: 8.7/10</p>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+</body>
+</html>
