@@ -21,15 +21,20 @@
     color: #333;
     background-color: #f4f4f4;
   }
+  /* Center the content */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
     .education-item {
       font-size: 16px;
-      max-width: 800px;
-      margin: 0 auto;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-bottom: 30px;
     }
 
       .school h3 {
@@ -85,27 +90,28 @@
   }
 
     .university-logo {
-  width: 60px;
+  width: 40px;
+  height: auto;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
   .logo-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-    flex-direction: row;
 }
 
 .university-logo {
-  width: 80px; /* Adjust the size of the logos */
-  margin-right: 20px;
+  width: 60px; /* Adjust the size of the logos */
+  height: auto;
 }
 
 .content {
   flex: 1;
-  padding-left: 20px; /* Add some spacing between content and logos */
+  padding-right: 20px; /* Add some spacing between content and logos */
 }
-  .content h3 {
-    margin-bottom; 10px;
-  }
+    
   /* Header styles */
   .header {
     background-color: #333;
@@ -185,41 +191,31 @@
       <h2>Education</h2>
       <div class="education-item">
          <div class="logo-content">
-        <img src="images/georgiatechicon.png" alt="Georgia Tech Logo" class="university-logo"></div>
+        <img src="images/georgiatechicon.png" alt="Georgia Tech Logo" class="university-logo"> </div>
             <div class="content">
         <h3 style="font-size: 18px;"><a href="https://www.gatech.edu/">Georgia Institute of Technology</a> - Atlanta, GA</h3>
         <p>Doctor of Philosophy in <a href="https://www.ae.gatech.edu/">Aerospace Engineering</a></p>
-        <p>Expected Graduation: 2025</p> </div>
-                       <div class="logo-content">
-        <img src="images/georgiatechicon.png" alt="Georgia Tech Logo" class="university-logo"></div>
-      
+        <p>Expected Graduation: 2025</p>
+      </div>
       <div class="education-item">
         <h3 style="font-size: 18px;"><a href="https://www.gatech.edu/">Georgia Institute of Technology</a> - Atlanta, GA</h3>
         <p>Master of Science in <a href="https://www.ae.gatech.edu/">Aerospace Engineering</a></p>
         <p>Graduation: July 2023</p>
-        <p>CGPA: 3.9/4</p> </div>
-                   <div class="logo-content">
-        <img src="images/georgiatechicon.png" alt="Georgia Tech Logo" class="university-logo"></div>
-    
+        <p>CGPA: 3.9/4</p>
+      </div>
       <div class="education-item">
+         <div class="logo-content">
+        <img src="images/miticon.png" alt="MIT Logo" class="university-logo"> </div>
          <div class="content">
         <h3 style="font-size: 18px;"><a href="https://manipal.edu/mit.html/">Manipal Institute of Technology</a> - Manipal, India</h3>
         <p><a href="https://manipal.edu/mit/program-list/btech/btech-mechanical-engineering.html/">Bachelor of Technology in Mechanical Engineering</a></p>
         <p>Minor in Thermal Engineering</p>
         <p>Graduation: May 2021</p>
-        <p>CGPA: 8.7/10</p> </div>
-                    <div class="logo-content">
-        <img src="images/miticon.png" alt="MIT Logo" class="university-logo"></div>
+        <p>CGPA: 8.7/10</p>
+      </div>
     </div>
   </div>      
     </div>
   </div>
 </body>
 </html>
-
-
-
-
-
-  
-
