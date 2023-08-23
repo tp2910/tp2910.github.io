@@ -84,18 +84,13 @@
   align-items: center;
 }
 
-	.social-links a {
-  flex: 1;
-  text-align: center;
-}
-	
 .social-item {
   flex: 1;
   text-align: center;
 }
 	
 	.social-links img {
-  width: 25px;
+  width: 30px;
   margin-right: 10px;
 }
   /* Header styles */
@@ -118,19 +113,19 @@
     cursor: pointer;
   }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: #333;
-  width: 150px;
-  padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
   .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-item {
+    font-size: 22px;
+    cursor: pointer;
+    color: #77aafff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -142,7 +137,7 @@
     }
 
     .menu-item {
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 10px;
     }
 
@@ -150,7 +145,6 @@
       display: block;
     }
   }
-
 </style>
 </head>
 <body>
@@ -192,9 +186,6 @@
     <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en">
       <img src="images/googlescholaricon.png" alt="Google Scholar">
     </a>
-		    <a href="data/resume.pdf">
-			    <img src="images/resumeicon.png" alt="Resume">
-		    </a>
   </div>
 	  <div style="height: 30px;"></div>
     <div class="image">
