@@ -130,23 +130,28 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      width: 150px;
+      padding: 10px;
+    }
+
+    .menu-item {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
   }
 
-}
-
 </style>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
-
-    menuToggle.addEventListener("click", function () {
-      menu.classList.toggle("show-menu");
-    });
-  });
-</script>
 </head>
 <body>
 <div class="header">
