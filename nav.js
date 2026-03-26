@@ -1,16 +1,16 @@
-// Sticky nav shadow on scroll
-window.addEventListener('scroll', function () {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-});
-
 // Mobile menu toggle
 function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
+  var nav = document.getElementById('main-nav');
+  if (nav) nav.classList.toggle('open');
 }
 
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(function (a) {
-  a.addEventListener('click', function () {
-    document.getElementById('navLinks').classList.remove('open');
+// Close mobile menu when a nav link is clicked
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.getElementById('main-nav');
+  if (!nav) return;
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('open');
+    });
   });
 });
