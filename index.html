@@ -3,76 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research – Tavish Pattanayak</title>
+  <title>Tavish Pattanayak</title>
+  <meta name="description" content="Tavish Pattanayak — Incoming Assistant Professor, Mechanical Engineering, BITS Pilani Dubai. Research in Uncertainty Quantification and Sustainable Aviation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="nav-inner">
-    <a class="nav-name" href="index.html">Tavish Pattanayak</a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="experience.html">Experience</a></li>
-    </ul>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="index.html">Tavish Pattanayak</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html" class="active">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<div class="page-header">
+<main>
   <div class="container">
-    <h1 class="page-title">Research</h1>
-    <p class="page-subtitle">Computational and probabilistic methods for robust aerospace engineering design</p>
+
+    <!-- ── PROFILE ─────────────────────────────────────────────────────── -->
+    <section class="profile">
+      <div class="profile-photo-col">
+        <img src="photo.jpg" alt="Tavish Pattanayak" class="profile-photo"
+          onerror="this.style.display='none';document.getElementById('initials').style.display='flex'" />
+        <div id="initials" class="profile-initials" style="display:none">TP</div>
+      </div>
+
+      <div class="profile-info">
+        <h1 class="profile-name">Tavish Pattanayak</h1>
+        <p class="profile-position">Incoming Assistant Professor of Mechanical Engineering</p>
+        <p class="profile-affil">BITS Pilani, Dubai Campus &ensp;&middot;&ensp; Joining July 2026</p>
+
+        <div class="profile-divider"></div>
+
+        <p class="profile-bio">
+          I am an aerospace engineer whose research centres on making complex engineering systems
+          more reliable and sustainable. Specifically, I work at the intersection of
+          <strong>Uncertainty Quantification (UQ)</strong>,
+          <strong>Multidisciplinary Design Optimization (MDO)</strong>, and
+          <strong>sustainable aviation</strong>, developing probabilistic and data-driven
+          methods that translate component-level uncertainty into system-level design decisions.
+        </p>
+        <p class="profile-bio">
+          I completed my Ph.D. in Aerospace Engineering at the
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>
+          (2025), where I was a member of the
+          <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>
+          under Prof. Dimitri Mavris. My dissertation developed a data-driven framework for
+          resource allocation in technology maturation programs, with application to
+          hybrid-electric propulsion systems.
+        </p>
+        <p class="profile-bio">
+          Prior to joining BITS Pilani Dubai, I worked as a Machine Learning Engineer at
+          Ursa Simulation, developing physics-informed surrogate models for engineering
+          design workflows.
+        </p>
+
+        <div class="profile-links">
+          <a href="mailto:pattanayaktavish@gmail.com">Email</a>
+          <span class="link-sep">&middot;</span>
+          <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <span class="link-sep">&middot;</span>
+          <a href="https://www.linkedin.com/in/tavishp/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="link-sep">&middot;</span>
+          <a href="https://github.com/tp2910" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- ── NEWS ───────────────────────────────────────────────────────── -->
+    <section class="news-section">
+      <h2 class="section-heading">News</h2>
+      <ul class="news-list">
+        <li>
+          <time>2026</time>
+          <span>Paper published in <em>Aerospace Science and Technology</em>:
+            <a href="https://doi.org/10.1016/j.ast.2025.111243" target="_blank" rel="noopener">
+              Hybrid-electric Turboprop Performance under Battery Degradation: An Uncertainty Quantification Study
+            </a>
+          </span>
+        </li>
+        <li>
+          <time>Jul 2026</time>
+          <span>Joining the Department of Mechanical Engineering at BITS Pilani, Dubai Campus as Assistant Professor.</span>
+        </li>
+        <li>
+          <time>2025</time>
+          <span>Awarded the <strong>Woodruff Graduate Leadership Fellowship</strong> at Georgia Tech.</span>
+        </li>
+        <li>
+          <time>2025</time>
+          <span>Paper published in <em>Applied Energy</em>:
+            <a href="https://www.sciencedirect.com/science/article/pii/S0306261925010864" target="_blank" rel="noopener">
+              Battery technology for sustainable aviation: a review of current trends and future prospects
+            </a>
+          </span>
+        </li>
+        <li>
+          <time>2025</time>
+          <span>Defended Ph.D. dissertation at
+            <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>.
+            Dissertation: <em>An Uncertainty Quantification-based Methodology for Resource Allocation towards Technology Maturation</em>.
+          </span>
+        </li>
+        <li>
+          <time>2025</time>
+          <span>Paper on uncertainty analysis for NASA EPFD vehicles presented at 2025 ITEC+EATS, Anaheim, California.</span>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- ── CONTACT ─────────────────────────────────────────────────────── -->
+    <section class="contact-section">
+      <p>I welcome inquiries about research collaborations, prospective students, and speaking engagements &mdash; <a href="mailto:pattanayaktavish@gmail.com">pattanayaktavish@gmail.com</a></p>
+    </section>
+
   </div>
-</div>
+</main>
 
-<section class="section">
+<footer class="site-footer">
   <div class="container">
-    <p class="section-intro">My work develops computational and probabilistic methods that make aerospace engineering design more robust, efficient, and reliable &mdash; particularly for emerging sustainable technologies.</p>
-    <div class="research-grid">
-
-      <div class="research-card">
-        <div class="research-icon">&#128202;</div>
-        <h3>Uncertainty Quantification</h3>
-        <p>Propagating aleatory and epistemic uncertainties through high-fidelity aerospace simulations. Methods include polynomial chaos expansion, Gaussian process surrogates, Monte Carlo sampling, FORM/SORM, and Sobol sensitivity analysis. Application domains: hybrid-electric propulsion, structural integrity, and sustainable aviation fuel combustion.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#9881;&#65039;</div>
-        <h3>Multidisciplinary Design Optimization</h3>
-        <p>Gradient-based and evolutionary MDO for aircraft systems. Robust and reliability-based design under uncertainty (RBDO / OUU). Integration of high-fidelity physics solvers (CFD, FEA) with MDO frameworks including OpenMDAO and GEMSEO. Adjoint-based sensitivity computation for computationally tractable multi-physics optimization.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#9992;&#65039;</div>
-        <h3>Sustainable Aviation</h3>
-        <p>Exploring the full landscape of pathways toward net-zero aviation: hybrid-electric and fully electric propulsion, sustainable aviation fuels (SAF) derived from biomass, waste, and synthetic routes, hydrogen propulsion, and operational efficiency improvements. My research quantifies the uncertainty and risk inherent in each pathway, supports technology selection decisions under uncertainty, and contributes to the development of certification and validation frameworks for next-generation aircraft.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#129302;</div>
-        <h3>Machine Learning for Engineering</h3>
-        <p>Surrogate model development (Kriging, neural networks, Gaussian processes) for computationally expensive aerospace simulations. Physics-informed machine learning. Active learning for adaptive sampling. Application to UQ-MDO integrated workflows where evaluating high-fidelity models at every design point is infeasible.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#127919;</div>
-        <h3>Technology Maturation &amp; Risk Analysis</h3>
-        <p>Novel metrics for technology readiness assessment under uncertainty &mdash; Failure Impact (FI) and Uncertainty Impact (UI). Multi-attribute decision-making frameworks for prioritising component testing. Adaptive resource allocation for technology development programs, enabling rational test planning in the face of limited budgets and evolving information.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Tavish Pattanayak &middot; Built with GitHub Pages</p>
+    &copy; 2026 Tavish Pattanayak
   </div>
 </footer>
 
