@@ -3,164 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experience – Tavish Pattanayak</title>
+  <title>Experience — Tavish Pattanayak</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="nav-inner">
-    <a class="nav-name" href="index.html">Tavish Pattanayak</a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-    </ul>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="index.html">Tavish Pattanayak</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html" class="active">Experience</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<div class="page-header">
-  <div class="container">
-    <h1 class="page-title">Experience</h1>
-    <p class="page-subtitle">Academic, research, and industry background</p>
-  </div>
-</div>
+<main>
+  <div class="container container-narrow">
 
-<section class="section">
-  <div class="container">
+    <h1 class="page-heading">Experience</h1>
 
-    <!-- ── INDUSTRY ──────────────────────────────────────────────────────── -->
-    <h2 class="section-title">Industry</h2>
-    <div class="timeline">
+    <!-- ── EDUCATION ──────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Education</h2>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2025 &ndash; 2026</span>
-          <h3>Machine Learning Engineer</h3>
-          <p class="timeline-org">Ursa Simulation</p>
-          <p>Applied physics-informed machine learning and surrogate modelling to engineering simulation workflows. Developed ML-augmented solvers for aerospace and engineering design problems.</p>
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Ph.D., Aerospace Engineering</span>
+          <span class="exp-date">2021 &ndash; 2025</span>
         </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>,
+          Atlanta, Georgia
+        </p>
+        <p class="exp-detail">
+          Dissertation: <em>An Uncertainty Quantification-based Methodology for Resource Allocation towards Technology Maturation</em>.
+          Advisor: Prof. Dimitri N. Mavris,
+          <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>.
+        </p>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2021</span>
-          <h3>Department Manager</h3>
-          <p class="timeline-org">Flipkart (Walmart) &mdash; Bangalore, India</p>
-          <p>Managed a workforce of 300+ contract workers and 20 full-time employees, ensuring high throughput. Developed and reported KPIs, performed root cause analyses, and liaised with stakeholders to improve supply chain operations. Reduced inventory damages and thefts through process improvements.</p>
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">M.S., Aerospace Engineering</span>
+          <span class="exp-date">2021 &ndash; 2023</span>
         </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>,
+          Atlanta, Georgia
+        </p>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2018 &ndash; 2020</span>
-          <h3>Aerodynamics Engineer</h3>
-          <p class="timeline-org">MotoManipal &mdash; Manipal, India</p>
-          <p>Designed and manufactured an electric superbike from scratch; evaluated it for conformance to engineering and quality standards. Led experimental validation of vehicle subsystems, conducting stress tests and fatigue analysis on prototypes, and correlated physical test data with digital models. Won Best Design and Best Commercial Bike at the Asian Electric Bike Competition (AEBC 2019), Visakhapatnam.</p>
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">B.Tech., Aeronautical Engineering</span>
+          <span class="exp-date">2016 &ndash; 2020</span>
         </div>
+        <p class="exp-org">Manipal Institute of Technology, Manipal, India</p>
       </div>
 
     </div>
 
-    <!-- ── RESEARCH ───────────────────────────────────────────────────────── -->
-    <h2 class="section-title" style="margin-top: 3.5rem;">Research</h2>
-    <div class="timeline">
+    <!-- ── INDUSTRY ───────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Industry</h2>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2023 &ndash; 2025</span>
-          <h3>Graduate Researcher &mdash; NASA Electrified Propulsion Flight Demonstration Program</h3>
-          <p class="timeline-org">
-            <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>,
-            <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>
-          </p>
-          <p>Developed and executed complex physics-based models and Monte Carlo simulations in Python and MATLAB to evaluate system safety margins and performance under uncertainty. Optimised system architectures using Global Sensitivity Analysis, translating fundamental principles into computationally efficient models. Research sponsored by NASA.</p>
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Machine Learning Engineer</span>
+          <span class="exp-date">2025 &ndash; 2026</span>
         </div>
+        <p class="exp-org">Ursa Simulation</p>
+        <p class="exp-detail">Applied physics-informed machine learning and surrogate modelling to engineering simulation workflows. Developed ML-augmented solvers for aerospace and engineering design problems.</p>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2021 &ndash; 2022</span>
-          <h3>Graduate Researcher &mdash; Advanced Race Car Analysis and Development Environment</h3>
-          <p class="timeline-org">
-            <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> &mdash; Atlanta, GA
-          </p>
-          <p>Developed multi-body dynamic models of vehicle subsystems using Dymola. Validated digital 6DOF/3DOF dynamic models against physical test data, ensuring high-fidelity simulation of rigid body kinematics.</p>
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Department Manager</span>
+          <span class="exp-date">2021</span>
         </div>
+        <p class="exp-org">Flipkart (Walmart) &mdash; Bangalore, India</p>
+        <p class="exp-detail">Managed a workforce of 300+ contract workers and 20 full-time employees. Developed and reported KPIs, performed root cause analyses, and liaised with stakeholders to improve supply chain operations. Reduced inventory damages and thefts through process improvements.</p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Aerodynamics Engineer</span>
+          <span class="exp-date">2018 &ndash; 2020</span>
+        </div>
+        <p class="exp-org">MotoManipal &mdash; Manipal, India</p>
+        <p class="exp-detail">Designed and manufactured an electric superbike; led experimental validation of vehicle subsystems, conducting stress tests and fatigue analysis on prototypes. Won Best Design and Best Commercial Bike at the Asian Electric Bike Competition (AEBC 2019), Visakhapatnam.</p>
+      </div>
+
+    </div>
+
+    <!-- ── RESEARCH ───────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Research</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Graduate Researcher &mdash; NASA Electrified Propulsion Flight Demonstration</span>
+          <span class="exp-date">2023 &ndash; 2025</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>,
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>
+        </p>
+        <p class="exp-detail">Developed and executed physics-based models and Monte Carlo simulations in Python and MATLAB to evaluate system safety margins and performance under uncertainty. Applied global sensitivity analysis to optimise hybrid-electric propulsion architectures. Research sponsored by NASA.</p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Graduate Researcher &mdash; Advanced Race Car Analysis and Development Environment</span>
+          <span class="exp-date">2021 &ndash; 2022</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> &mdash; Atlanta, Georgia
+        </p>
+        <p class="exp-detail">Developed multi-body dynamic models of vehicle subsystems using Dymola. Validated digital 6DOF/3DOF dynamic models against physical test data, ensuring high-fidelity simulation of rigid body kinematics.</p>
       </div>
 
     </div>
 
-    <!-- ── AWARDS & SERVICE ───────────────────────────────────────────────── -->
-    <h2 class="section-title" style="margin-top: 3.5rem;">Awards &amp; Professional Service</h2>
-    <div class="awards-grid">
+    <!-- ── AWARDS & SERVICE ───────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Awards &amp; Professional Service</h2>
 
-      <div class="award-item">
-        <span class="award-year">2025</span>
-        <div>
-          <strong>Woodruff Graduate Leadership Fellow</strong><br/>
-          <span class="award-org">Georgia Institute of Technology</span>
-        </div>
-      </div>
-
-      <div class="award-item">
-        <span class="award-year">2024&ndash;</span>
-        <div>
-          <strong>Member, Digital Engineering Integration and Outreach Committee</strong><br/>
-          <span class="award-org">AIAA</span>
-        </div>
-      </div>
-
-      <div class="award-item">
-        <span class="award-year">2024&ndash;</span>
-        <div>
-          <strong>Reviewer</strong><br/>
-          <span class="award-org">Applied Engineering Journal</span>
-        </div>
-      </div>
-
-      <div class="award-item">
-        <span class="award-year">2023&ndash;</span>
-        <div>
-          <strong>Reviewer, President's Undergraduate Research Awards (PURA) &amp; UROP</strong><br/>
-          <span class="award-org">Georgia Institute of Technology</span>
-        </div>
-      </div>
-
-      <div class="award-item">
-        <span class="award-year">2023&ndash;</span>
-        <div>
-          <strong>Judge, Annual Undergraduate Research Symposium (16th &amp; 17th editions)</strong><br/>
-          <span class="award-org">Georgia Institute of Technology</span>
-        </div>
-      </div>
-
-      <div class="award-item">
-        <span class="award-year">2019</span>
-        <div>
-          <strong>Best Design &amp; Best Commercial Bike</strong><br/>
-          <span class="award-org">Asian Electric Bike Competition (AEBC 2019), Visakhapatnam</span>
-        </div>
-      </div>
-
-    </div>
+    <table class="awards-table">
+      <tbody>
+        <tr>
+          <td class="award-year">2025</td>
+          <td>
+            <strong>Woodruff Graduate Leadership Fellow</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2024&ndash;</td>
+          <td>
+            <strong>Member, Digital Engineering Integration and Outreach Committee</strong><br />
+            <span class="award-org">AIAA</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2024&ndash;</td>
+          <td>
+            <strong>Reviewer</strong><br />
+            <span class="award-org">Applied Energy Journal</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2023&ndash;</td>
+          <td>
+            <strong>Reviewer, President's Undergraduate Research Awards (PURA) &amp; UROP</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2023&ndash;</td>
+          <td>
+            <strong>Judge, Annual Undergraduate Research Symposium (16th &amp; 17th editions)</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2019</td>
+          <td>
+            <strong>Best Design &amp; Best Commercial Bike</strong><br />
+            <span class="award-org">Asian Electric Bike Competition (AEBC 2019), Visakhapatnam</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
-</section>
+</main>
 
-<footer class="footer">
+<footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Tavish Pattanayak &middot; Built with GitHub Pages</p>
+    &copy; 2026 Tavish Pattanayak
   </div>
 </footer>
 
