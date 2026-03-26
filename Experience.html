@@ -1,206 +1,199 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Tavish Pattanayak - Experience</title>
-  <meta name="author" content="Tavish Pattanayak">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <style>
-    /* ... (previous styles) ... */
-    /* Reset default margin and padding */
-  body, h1, h2, h3, p, ul, li, span {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Define a general font and background color */
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-  }
-  /* Center the content */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-    .experience {
-      background: #F5F5F5;
-      padding: 20px;
-      margin-bottom: 10px;
-    }
-    
-  /* Header styles */
-  .header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .menu-toggle {
-    display: none;
-    cursor: pointer;
-  }
-
-  .menu {
-    display: flex;
-    gap: 20px;
-  }
-
-  .menu-item {
-    font-size: 18px;
-    cursor: pointer;
-    color: #fff;
-  }
-    
-    /* Improved company styling */
-
-    /* Date styling */  
-    .date {
-      font-style: italic;
-      color: #888;
-    }
-
-    /* Role styling */
-    .role {
-      font-size: 16px;
-    }
-
-    .work {
-      margin-top: 10px;
-    }
-
-    /* Reset list style */
-    .work ul {
-      list-style: inside;
-      padding-left: 0;
-      margin-left: 0;
-    }
-
-    .work li {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 5px;
-    }
-
-    .current {
-      font-weight: bold;
-      color: #77aaff; /* Highlight color */
-    }
-
-.award {
-  margin-top: 10px;
-  font-style: italic;
-}
-
-.award div {
-  color: #555;
-}
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #333;
-      width: 150px;
-      padding: 10px;
-    }
-
-    .menu-item {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .menu-toggle {
-      display: block;
-    }
-  }
-    
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Tavish Pattanayak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo">Tavish Pattanayak</div>
-    <div class="menu-toggle">&#9776;</div>
-    <div class="menu">
-      <div class="menu-item"><a href="index.html">Home</a></div>
-      <div class="menu-item"><a href="Education.html">Education</a></div>
-      <div class="menu-item"><a href="Courses.html">Courses</a></div>
-      <div class="menu-item current"><a href="Experience.html">Experience</a></div>
-      <div class="menu-item"><a href="Papers.html">Papers</a></div>
-      <div class="menu-item"><a href="Extrac.html">Extra Curriculars</a></div>
-    </div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="index.html">Tavish Pattanayak</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html" class="active">Experience</a>
+    </nav>
   </div>
-  
+</header>
+
+<main>
+  <div class="container container-narrow">
+
+    <h1 class="page-heading">Experience</h1>
+
+    <!-- ── EDUCATION ──────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Education</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Ph.D., Aerospace Engineering</span>
+          <span class="exp-date">2021 &ndash; 2025</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>,
+          Atlanta, Georgia
+        </p>
+        <p class="exp-detail">
+          Dissertation: <em>An Uncertainty Quantification-based Methodology for Resource Allocation towards Technology Maturation</em>.
+          Advisor: Prof. Dimitri N. Mavris,
+          <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>.
+        </p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">M.S., Aerospace Engineering</span>
+          <span class="exp-date">2021 &ndash; 2023</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>,
+          Atlanta, Georgia
+        </p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">B.Tech., Aeronautical Engineering</span>
+          <span class="exp-date">2016 &ndash; 2020</span>
+        </div>
+        <p class="exp-org">Manipal Institute of Technology, Manipal, India</p>
+      </div>
+
+    </div>
+
+    <!-- ── INDUSTRY ───────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Industry</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Machine Learning Engineer</span>
+          <span class="exp-date">2025 &ndash; 2026</span>
+        </div>
+        <p class="exp-org">Ursa Simulation</p>
+        <p class="exp-detail">Applied physics-informed machine learning and surrogate modelling to engineering simulation workflows. Developed ML-augmented solvers for aerospace and engineering design problems.</p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Department Manager</span>
+          <span class="exp-date">2021</span>
+        </div>
+        <p class="exp-org">Flipkart (Walmart) &mdash; Bangalore, India</p>
+        <p class="exp-detail">Managed a workforce of 300+ contract workers and 20 full-time employees. Developed and reported KPIs, performed root cause analyses, and liaised with stakeholders to improve supply chain operations. Reduced inventory damages and thefts through process improvements.</p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Aerodynamics Engineer</span>
+          <span class="exp-date">2018 &ndash; 2020</span>
+        </div>
+        <p class="exp-org">MotoManipal &mdash; Manipal, India</p>
+        <p class="exp-detail">Designed and manufactured an electric superbike; led experimental validation of vehicle subsystems, conducting stress tests and fatigue analysis on prototypes. Won Best Design and Best Commercial Bike at the Asian Electric Bike Competition (AEBC 2019), Visakhapatnam.</p>
+      </div>
+
+    </div>
+
+    <!-- ── RESEARCH ───────────────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Research</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Graduate Researcher &mdash; NASA Electrified Propulsion Flight Demonstration</span>
+          <span class="exp-date">2023 &ndash; 2025</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.asdl.gatech.edu" target="_blank" rel="noopener">Aerospace Systems Design Laboratory</a>,
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>
+        </p>
+        <p class="exp-detail">Developed and executed physics-based models and Monte Carlo simulations in Python and MATLAB to evaluate system safety margins and performance under uncertainty. Applied global sensitivity analysis to optimise hybrid-electric propulsion architectures. Research sponsored by NASA.</p>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <span class="exp-title">Graduate Researcher &mdash; Advanced Race Car Analysis and Development Environment</span>
+          <span class="exp-date">2021 &ndash; 2022</span>
+        </div>
+        <p class="exp-org">
+          <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> &mdash; Atlanta, Georgia
+        </p>
+        <p class="exp-detail">Developed multi-body dynamic models of vehicle subsystems using Dymola. Validated digital 6DOF/3DOF dynamic models against physical test data, ensuring high-fidelity simulation of rigid body kinematics.</p>
+      </div>
+
+    </div>
+
+    <!-- ── AWARDS & SERVICE ───────────────────────────────────────────── -->
+    <h2 class="exp-section-heading">Awards &amp; Professional Service</h2>
+
+    <table class="awards-table">
+      <tbody>
+        <tr>
+          <td class="award-year">2025</td>
+          <td>
+            <strong>Woodruff Graduate Leadership Fellow</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2024&ndash;</td>
+          <td>
+            <strong>Member, Digital Engineering Integration and Outreach Committee</strong><br />
+            <span class="award-org">AIAA</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2024&ndash;</td>
+          <td>
+            <strong>Reviewer</strong><br />
+            <span class="award-org">Applied Energy Journal</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2023&ndash;</td>
+          <td>
+            <strong>Reviewer, President's Undergraduate Research Awards (PURA) &amp; UROP</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2023&ndash;</td>
+          <td>
+            <strong>Judge, Annual Undergraduate Research Symposium (16th &amp; 17th editions)</strong><br />
+            <span class="award-org">Georgia Institute of Technology</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="award-year">2019</td>
+          <td>
+            <strong>Best Design &amp; Best Commercial Bike</strong><br />
+            <span class="award-org">Asian Electric Bike Competition (AEBC 2019), Visakhapatnam</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>
+
+<footer class="site-footer">
   <div class="container">
-    <h1>Experience</h1>
-    <div style="text-align: left; max-width: 800px; margin: 0 auto;">
-      
-      <div class="experience">
-        <h2 class="role">Department Manager</h2>
-        <h3 class="company"><a href=https://www.flipkart.com/>Flipkart</a><a href=https://corporate.walmart.com/newsroom/2019/08/19/flipkart-walmart-celebrating-one-year-together> (Walmart)</a></h3>
-        <p class="date">2021</p>
-        <div class="work">
-          <ul>
-            <li>Developed and reported KPI’s (Key Performance Indicators), performed RCA’s (Root Cause Analysis), and liaised with various stakeholders for improving supply chain operations.</li>
-            <li>Significantly reduced damages and thefts in inventory through simple yet innovative measures.</li>
-            <li>Managed a workforce of three hundred off-roll and twenty on-roll employees in the outbound department.</li>
-            <li>Enacted inventory management strategies, oversaw day-to-day operations, documented, and promoted best practices in a fast-paced work environment.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="experience">
-        <h2 class="role">Aerodynamics Engineer</h2>
-        <h3 class="company"><a href=https://motomanipal.in/>MotoManipal</a></h3>
-        <p class="date">2018-2021</p>
-        <div class="award">
-            <b>Best Design and Best Commercial Bike</b>
-            <div>Asian E-Bike Challenge (AEBC), Visakhapatnam, India-2019</div>
-        </div>
-
-        <div class="work">
-          <ul>
-            <li>Designed and manufactured an electric superbike from scratch and evaluated it for conformance to engineering principles and quality standards.</li>
-            <li>Planned and conducted experimental, environmental, operational, and stress tests on models or prototypes of the bike and associated systems.</li>
-            <li>Prepared technical reports or other documentation, such as handbooks or bulletins, to be used by engineering staff or management and for future use.</li>
-          </ul>
-        </div>
-
-      </div>
-      
-      <div class="experience">
-        <h2 class="role">Summer Intern</h2>
-        <h3 class="company"><a href=https://www.delhimetrorail.com/>Delhi Metro Rail Corporation</a></h3>
-        <p class="date">2019</p>
-        <div class="work">
-          <ul>
-            <li>Worked in the assembly of the bogey at the yard and inspected parts of the metro trains in the yellow line.</li>
-            <li>Learned cooling, transmission, lathe and other machines for successful maintenance operations of the coach.</li>
-            <li>Pseudo-drove the coach in order to know about the various controls at the driver’s disposal.</li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
+    &copy; 2026 Tavish Pattanayak
   </div>
+</footer>
+
+<script src="nav.js"></script>
 </body>
 </html>
