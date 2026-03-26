@@ -3,76 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research – Tavish Pattanayak</title>
+  <title>Research — Tavish Pattanayak</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="nav-inner">
-    <a class="nav-name" href="index.html">Tavish Pattanayak</a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="experience.html">Experience</a></li>
-    </ul>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="index.html">Tavish Pattanayak</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<div class="page-header">
-  <div class="container">
-    <h1 class="page-title">Research</h1>
-    <p class="page-subtitle">Computational and probabilistic methods for robust aerospace engineering design</p>
-  </div>
-</div>
+<main>
+  <div class="container container-narrow">
 
-<section class="section">
-  <div class="container">
-    <p class="section-intro">My work develops computational and probabilistic methods that make aerospace engineering design more robust, efficient, and reliable &mdash; particularly for emerging sustainable technologies.</p>
-    <div class="research-grid">
+    <h1 class="page-heading">Research</h1>
 
-      <div class="research-card">
-        <div class="research-icon">&#128202;</div>
-        <h3>Uncertainty Quantification</h3>
-        <p>Propagating aleatory and epistemic uncertainties through high-fidelity aerospace simulations. Methods include polynomial chaos expansion, Gaussian process surrogates, Monte Carlo sampling, FORM/SORM, and Sobol sensitivity analysis. Application domains: hybrid-electric propulsion, structural integrity, and sustainable aviation fuel combustion.</p>
-      </div>
+    <p class="page-intro">
+      My work develops computational and probabilistic methods for engineering systems where
+      uncertainty is not just a nuisance but a central design consideration. The common thread
+      is rigorously quantifying what we do not know, and using that knowledge to make better
+      decisions under uncertainty &mdash; whether in the design of a new aircraft, the planning
+      of a test programme, or the evaluation of a novel propulsion technology.
+    </p>
 
-      <div class="research-card">
-        <div class="research-icon">&#9881;&#65039;</div>
-        <h3>Multidisciplinary Design Optimization</h3>
-        <p>Gradient-based and evolutionary MDO for aircraft systems. Robust and reliability-based design under uncertainty (RBDO / OUU). Integration of high-fidelity physics solvers (CFD, FEA) with MDO frameworks including OpenMDAO and GEMSEO. Adjoint-based sensitivity computation for computationally tractable multi-physics optimization.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#9992;&#65039;</div>
-        <h3>Sustainable Aviation</h3>
-        <p>Exploring the full landscape of pathways toward net-zero aviation: hybrid-electric and fully electric propulsion, sustainable aviation fuels (SAF) derived from biomass, waste, and synthetic routes, hydrogen propulsion, and operational efficiency improvements. My research quantifies the uncertainty and risk inherent in each pathway, supports technology selection decisions under uncertainty, and contributes to the development of certification and validation frameworks for next-generation aircraft.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#129302;</div>
-        <h3>Machine Learning for Engineering</h3>
-        <p>Surrogate model development (Kriging, neural networks, Gaussian processes) for computationally expensive aerospace simulations. Physics-informed machine learning. Active learning for adaptive sampling. Application to UQ-MDO integrated workflows where evaluating high-fidelity models at every design point is infeasible.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">&#127919;</div>
-        <h3>Technology Maturation &amp; Risk Analysis</h3>
-        <p>Novel metrics for technology readiness assessment under uncertainty &mdash; Failure Impact (FI) and Uncertainty Impact (UI). Multi-attribute decision-making frameworks for prioritising component testing. Adaptive resource allocation for technology development programs, enabling rational test planning in the face of limited budgets and evolving information.</p>
-      </div>
-
+    <div class="research-area">
+      <h2>Uncertainty Quantification</h2>
+      <p>
+        I develop end-to-end UQ frameworks that propagate aleatory and epistemic uncertainties
+        through high-fidelity aerospace simulations. This includes constructing surrogate models
+        to make Monte Carlo analysis tractable, applying polynomial chaos expansion and sparse
+        quadrature methods, and performing global sensitivity analysis (Sobol indices, Morris
+        screening) to identify which design variables and component uncertainties drive
+        system-level risk. Current application areas include hybrid-electric propulsion,
+        battery degradation, and sustainable aviation fuel combustion.
+      </p>
     </div>
-  </div>
-</section>
 
-<footer class="footer">
+    <div class="research-area">
+      <h2>Multidisciplinary Design Optimization</h2>
+      <p>
+        Engineering systems of practical interest &mdash; aircraft, propulsion architectures,
+        energy systems &mdash; involve coupled, competing disciplines. I work on MDO methods
+        that properly account for uncertainty at the system level, including reliability-based
+        design optimization (RBDO) and optimization under uncertainty (OUU). This requires
+        integrating gradient-based and evolutionary optimizers with probabilistic constraint
+        handling, and efficiently computing sensitivities across disciplines using adjoint
+        methods.
+      </p>
+    </div>
+
+    <div class="research-area">
+      <h2>Sustainable Aviation</h2>
+      <p>
+        Decarbonising aviation requires navigating a wide set of technological pathways, each
+        with its own uncertainty profile. My research examines the full landscape: hybrid-electric
+        and fully electric propulsion, sustainable aviation fuels (SAF) from biomass, waste
+        streams, and synthetic (power-to-liquid) routes, hydrogen propulsion, and operational
+        efficiency measures. A consistent thread is that quantifying the uncertainty and risk
+        in each pathway is essential for sound technology selection, investment prioritisation,
+        and certification planning. I am particularly interested in how probabilistic methods
+        can accelerate the readiness of these technologies.
+      </p>
+    </div>
+
+    <div class="research-area">
+      <h2>Technology Maturation and Risk Analysis</h2>
+      <p>
+        Novel aerospace technologies face the challenge of demonstrating readiness through a
+        limited test budget. My dissertation introduced two metrics &mdash; Failure Impact (FI)
+        and Uncertainty Impact (UI) &mdash; that extend beyond traditional Technology Readiness
+        Level (TRL) assessments to capture how component-level failures and uncertainties
+        cascade to the system level. Built on these metrics is a multi-attribute decision-making
+        framework for prioritising testing, together with an adaptive resource allocation
+        procedure that updates test plans as new data arrive.
+      </p>
+    </div>
+
+    <div class="research-area">
+      <h2>Machine Learning for Engineering Simulation</h2>
+      <p>
+        Many UQ and MDO workflows require thousands of solver evaluations, making high-fidelity
+        simulation prohibitive. I build surrogate models &mdash; Gaussian processes, neural
+        networks, radial basis functions &mdash; and physics-informed machine learning frameworks
+        that make these analyses tractable while preserving physical fidelity. A particular
+        interest is active learning: selecting the most informative design points to query
+        so that surrogates can be built with the fewest expensive simulations.
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Tavish Pattanayak &middot; Built with GitHub Pages</p>
+    &copy; 2026 Tavish Pattanayak
   </div>
 </footer>
 
