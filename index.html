@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tavish Pattanayak</title>
-  <meta name="description" content="Tavish Pattanayak – Incoming Assistant Professor of Mechanical Engineering at BITS Pilani Dubai. Research in Uncertainty Quantification, MDO, and Sustainable Aviation." />
+  <title>Research – Tavish Pattanayak</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -12,340 +11,71 @@
 </head>
 <body>
 
-<!-- ── NAV ─────────────────────────────────────────────────────────────────── -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a class="nav-name" href="#top">Tavish Pattanayak</a>
+    <a class="nav-name" href="index.html">Tavish Pattanayak</a>
     <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="experience.html">Experience</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ── HERO ────────────────────────────────────────────────────────────────── -->
-<section id="top" class="hero">
-  <div class="hero-inner">
-    <div class="hero-photo-wrap">
-      <img src="photo.jpg" alt="Tavish Pattanayak" class="hero-photo" onerror="this.style.display='none';document.getElementById('photo-initials').style.display='flex'" />
-      <div id="photo-initials" class="hero-initials" style="display:none">TP</div>
-    </div>
-    <div class="hero-text">
-      <h1 class="hero-name">Tavish Pattanayak</h1>
-      <p class="hero-title">Incoming Assistant Professor</p>
-      <p class="hero-affil">
-        <span class="affil-primary">Mechanical Engineering — BITS Pilani, Dubai Campus</span>
-        <span class="affil-sep">|</span>
-        <span class="affil-joining">Joining July 2026</span>
-      </p>
-      <p class="hero-sub">Ph.D. Aerospace Engineering · Georgia Institute of Technology</p>
-      <div class="hero-badges">
-        <span class="badge">Uncertainty Quantification</span>
-        <span class="badge">Multidisciplinary Design Optimization</span>
-        <span class="badge">Sustainable Aviation</span>
-      </div>
-      <div class="hero-links">
-        <a href="mailto:tavish.pattanayak@ursasimulation.com" class="btn btn-primary">Email</a>
-        <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn-outline">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/tavishp/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-        <a href="https://github.com/tp2910" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── ABOUT ───────────────────────────────────────────────────────────────── -->
-<section id="about" class="section section-alt">
+<div class="page-header">
   <div class="container">
-    <h2 class="section-title">About</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          I am an incoming Assistant Professor in the Department of Mechanical Engineering at
-          <strong>BITS Pilani, Dubai Campus</strong> (joining July 2026). I completed my Ph.D. in
-          Aerospace Engineering at the <strong>Georgia Institute of Technology</strong>, where I
-          was a researcher in the Aerospace Systems Design Laboratory (ASDL) under
-          <strong>Prof. Dimitri Mavris</strong>.
-        </p>
-        <p>
-          My dissertation, <em>An Uncertainty Quantification-based Methodology for Resource
-          Allocation towards Technology Maturation</em>, develops a data-driven framework to
-          optimise testing strategies for novel aerospace technologies — with a focus on
-          hybrid-electric propulsion systems — by rigorously propagating component-level
-          uncertainties to system-level performance metrics.
-        </p>
-        <p>
-          Prior to my faculty appointment, I worked as a <strong>Machine Learning Engineer at
-          Ursa Simulation</strong>, applying physics-informed ML and surrogate modelling techniques
-          to engineering simulation workflows.
-        </p>
-        <p>
-          My research lies at the intersection of <strong>Uncertainty Quantification (UQ)</strong>,
-          <strong>Multidisciplinary Design Optimization (MDO)</strong>, and
-          <strong>sustainable aviation</strong> — areas where rigorous probabilistic methods are
-          essential for responsible decision-making in the design and certification of next-generation
-          aircraft.
-        </p>
-      </div>
-      <div class="about-card-wrap">
-        <div class="info-card">
-          <h3 class="card-heading">Education</h3>
-          <ul class="info-list">
-            <li>
-              <span class="info-icon">🎓</span>
-              <div>
-                <strong>Ph.D. Aerospace Engineering</strong><br/>
-                Georgia Institute of Technology, 2025<br/>
-                <em>Advisor: Prof. Dimitri Mavris</em>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="info-card">
-          <h3 class="card-heading">Quick Links</h3>
-          <ul class="info-list">
-            <li><span class="info-icon">📄</span><a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en" target="_blank">Google Scholar Profile</a></li>
-            <li><span class="info-icon">🔗</span><a href="https://www.linkedin.com/in/tavishp/" target="_blank">LinkedIn</a></li>
-            <li><span class="info-icon">🏛</span><a href="https://www.asdl.gatech.edu/" target="_blank">ASDL — Georgia Tech</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <h1 class="page-title">Research</h1>
+    <p class="page-subtitle">Computational and probabilistic methods for robust aerospace engineering design</p>
   </div>
-</section>
+</div>
 
-<!-- ── RESEARCH ────────────────────────────────────────────────────────────── -->
-<section id="research" class="section">
+<section class="section">
   <div class="container">
-    <h2 class="section-title">Research Interests</h2>
-    <p class="section-intro">My work develops computational and probabilistic methods that make aerospace engineering design more robust, efficient, and reliable — particularly for emerging sustainable technologies.</p>
+    <p class="section-intro">My work develops computational and probabilistic methods that make aerospace engineering design more robust, efficient, and reliable &mdash; particularly for emerging sustainable technologies.</p>
     <div class="research-grid">
 
       <div class="research-card">
-        <div class="research-icon">📊</div>
+        <div class="research-icon">&#128202;</div>
         <h3>Uncertainty Quantification</h3>
-        <p>Propagating aleatory and epistemic uncertainties through high-fidelity aerospace simulations. Methods include polynomial chaos expansion, Gaussian process surrogates, Monte Carlo sampling, FORM/SORM, and Sobol sensitivity analysis. Application domains: hybrid-electric propulsion, structural integrity, and SAF combustion.</p>
+        <p>Propagating aleatory and epistemic uncertainties through high-fidelity aerospace simulations. Methods include polynomial chaos expansion, Gaussian process surrogates, Monte Carlo sampling, FORM/SORM, and Sobol sensitivity analysis. Application domains: hybrid-electric propulsion, structural integrity, and sustainable aviation fuel combustion.</p>
       </div>
 
       <div class="research-card">
-        <div class="research-icon">⚙️</div>
+        <div class="research-icon">&#9881;&#65039;</div>
         <h3>Multidisciplinary Design Optimization</h3>
-        <p>Gradient-based and evolutionary MDO for aircraft systems. Robust and reliability-based design under uncertainty (RBDO / OUU). Integration of high-fidelity physics solvers (CFD, FEA) with MDO frameworks including OpenMDAO and GEMSEO. Adjoint-based sensitivity computation.</p>
+        <p>Gradient-based and evolutionary MDO for aircraft systems. Robust and reliability-based design under uncertainty (RBDO / OUU). Integration of high-fidelity physics solvers (CFD, FEA) with MDO frameworks including OpenMDAO and GEMSEO. Adjoint-based sensitivity computation for computationally tractable multi-physics optimization.</p>
       </div>
 
       <div class="research-card">
-        <div class="research-icon">✈️</div>
+        <div class="research-icon">&#9992;&#65039;</div>
         <h3>Sustainable Aviation</h3>
-        <p>Electrification of aircraft propulsion systems — performance analysis, battery technology assessment, and certification pathways for hybrid-electric turboprops. Sustainable aviation fuel (SAF) analysis and alternative energy integration into commercial aviation roadmaps.</p>
+        <p>Exploring the full landscape of pathways toward net-zero aviation: hybrid-electric and fully electric propulsion, sustainable aviation fuels (SAF) derived from biomass, waste, and synthetic routes, hydrogen propulsion, and operational efficiency improvements. My research quantifies the uncertainty and risk inherent in each pathway, supports technology selection decisions under uncertainty, and contributes to the development of certification and validation frameworks for next-generation aircraft.</p>
       </div>
 
       <div class="research-card">
-        <div class="research-icon">🤖</div>
+        <div class="research-icon">&#129302;</div>
         <h3>Machine Learning for Engineering</h3>
-        <p>Surrogate model development (Kriging, neural networks, Gaussian processes) for computationally expensive aerospace simulations. Physics-informed machine learning. Active learning for adaptive sampling. Application to UQ-MDO integrated workflows.</p>
+        <p>Surrogate model development (Kriging, neural networks, Gaussian processes) for computationally expensive aerospace simulations. Physics-informed machine learning. Active learning for adaptive sampling. Application to UQ-MDO integrated workflows where evaluating high-fidelity models at every design point is infeasible.</p>
       </div>
 
       <div class="research-card">
-        <div class="research-icon">🎯</div>
-        <h3>Technology Maturation & Risk Analysis</h3>
-        <p>Novel metrics for technology readiness assessment under uncertainty — Failure Impact (FI) and Uncertainty Impact (UI). Multi-attribute decision-making frameworks for prioritising component testing. Adaptive resource allocation for technology development programs.</p>
-      </div>
-
-      <div class="research-card">
-        <div class="research-icon">🏭</div>
-        <h3>Manufacturing Uncertainty</h3>
-        <p>Uncertainty propagation in aerospace composite manufacturing processes. Variability in cure cycles, fibre orientation, and material properties and their impact on structural performance. UQ-informed design for as-manufactured geometries.</p>
+        <div class="research-icon">&#127919;</div>
+        <h3>Technology Maturation &amp; Risk Analysis</h3>
+        <p>Novel metrics for technology readiness assessment under uncertainty &mdash; Failure Impact (FI) and Uncertainty Impact (UI). Multi-attribute decision-making frameworks for prioritising component testing. Adaptive resource allocation for technology development programs, enabling rational test planning in the face of limited budgets and evolving information.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ── PUBLICATIONS ────────────────────────────────────────────────────────── -->
-<section id="publications" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">Publications</h2>
-    <p class="section-intro">
-      For a complete and up-to-date list, see my
-      <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
-    </p>
-
-    <h3 class="pub-category">Journal Articles</h3>
-
-    <div class="pub-list">
-      <div class="pub-item">
-        <div class="pub-year">2025</div>
-        <div class="pub-content">
-          <p class="pub-title">Battery technology for sustainable aviation: a review of current trends and future prospects</p>
-          <p class="pub-authors">T. Pattanayak, D. N. Mavris</p>
-          <p class="pub-venue"><em>Applied Energy</em>, Vol. 397, 2025</p>
-          <div class="pub-links">
-            <a href="https://www.researchgate.net/publication/397144609_Battery_technology_for_sustainable_aviation_a_review_of_current_trends_and_future_prospects" target="_blank" class="pub-link">ResearchGate</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-year">2024</div>
-        <div class="pub-content">
-          <p class="pub-title">Surveying the Landscape for Promoting Safety, Transparency, Accountability, and Equitable Access in Commercial Space Tourism</p>
-          <p class="pub-authors">T. Pattanayak et al.</p>
-          <p class="pub-venue"><em>New Space</em>, Mary Ann Liebert, 2024</p>
-          <div class="pub-links">
-            <a href="https://www.liebertpub.com/doi/10.1089/space.2024.0008" target="_blank" class="pub-link">Publisher</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="pub-category">Preprints &amp; Conference Papers</h3>
-
-    <div class="pub-list">
-      <div class="pub-item">
-        <div class="pub-year">2024</div>
-        <div class="pub-content">
-          <p class="pub-title">Evaluating Hybrid Electric Turboprop Development with Novel Metrics: Failure Impact and Uncertainty Impact</p>
-          <p class="pub-authors">T. Pattanayak et al.</p>
-          <p class="pub-venue"><em>Engineering Archive</em> (preprint), 2024</p>
-          <div class="pub-links">
-            <a href="https://engrxiv.org/preprint/view/6480" target="_blank" class="pub-link">Preprint</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="pub-category">Dissertation</h3>
-
-    <div class="pub-list">
-      <div class="pub-item">
-        <div class="pub-year">2025</div>
-        <div class="pub-content">
-          <p class="pub-title">An Uncertainty Quantification-based Methodology for Resource Allocation towards Technology Maturation</p>
-          <p class="pub-authors">T. Pattanayak</p>
-          <p class="pub-venue">Ph.D. Dissertation, Georgia Institute of Technology, 2025<br/>Advisor: Prof. Dimitri Mavris</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── EXPERIENCE ──────────────────────────────────────────────────────────── -->
-<section id="experience" class="section">
-  <div class="container">
-    <h2 class="section-title">Experience &amp; Education</h2>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">July 2026 – Present</span>
-          <h3>Assistant Professor, Mechanical Engineering</h3>
-          <p class="timeline-org">BITS Pilani, Dubai Campus — Dubai, UAE</p>
-          <p>Establishing a research program in UQ, MDO, and sustainable aviation technologies within the Mechanical Engineering Department.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2025 – 2026</span>
-          <h3>Machine Learning Engineer</h3>
-          <p class="timeline-org">Ursa Simulation</p>
-          <p>Applied physics-informed machine learning and surrogate modelling to engineering simulation workflows. Developed ML-augmented solvers for aerospace and engineering design problems.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2020 – 2025</span>
-          <h3>Ph.D. Researcher, Aerospace Engineering</h3>
-          <p class="timeline-org">Georgia Institute of Technology — Atlanta, GA</p>
-          <p>Graduate researcher at the Aerospace Systems Design Laboratory (ASDL) under Prof. Dimitri Mavris. Research sponsored by NASA (Electrified Powertrain Flight Demonstrator Program). Developed UQ-based methodology for resource allocation in technology maturation. Team member on Stage 1 winning submission for Boeing's GoAERO competition (autonomous rescue aircraft design).</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ─────────────────────────────────────────────────────────────── -->
-<section id="contact" class="section section-alt">
-  <div class="container contact-container">
-    <h2 class="section-title">Contact</h2>
-    <p class="section-intro">I welcome inquiries about research collaborations, prospective students, and speaking engagements. I will be based in Dubai from July 2026.</p>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <span class="contact-icon">📧</span>
-        <div>
-          <strong>Email</strong><br/>
-          <a href="mailto:tavish.pattanayak@ursasimulation.com">tavish.pattanayak@ursasimulation.com</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">🏛</span>
-        <div>
-          <strong>Affiliation (from July 2026)</strong><br/>
-          Department of Mechanical Engineering<br/>
-          BITS Pilani, Dubai Campus<br/>
-          Dubai, UAE
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">🔗</span>
-        <div>
-          <strong>Profiles</strong><br/>
-          <a href="https://scholar.google.com/citations?user=PsUwedsAAAAJ&hl=en" target="_blank">Google Scholar</a> ·
-          <a href="https://www.linkedin.com/in/tavishp/" target="_blank">LinkedIn</a> ·
-          <a href="https://github.com/tp2910" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ──────────────────────────────────────────────────────────────── -->
 <footer class="footer">
   <div class="container">
-    <p>© 2026 Tavish Pattanayak · Built with GitHub Pages</p>
+    <p>&copy; 2026 Tavish Pattanayak &middot; Built with GitHub Pages</p>
   </div>
 </footer>
 
-<script>
-  // Sticky nav shadow
-  window.addEventListener('scroll', () => {
-    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-  });
-
-  // Mobile menu toggle
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-
-  // Close menu on link click
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
-  });
-
-  // Active nav link highlight on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
-  sections.forEach(s => observer.observe(s));
-</script>
-
+<script src="nav.js"></script>
 </body>
 </html>
